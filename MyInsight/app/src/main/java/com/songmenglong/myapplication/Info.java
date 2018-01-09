@@ -1,11 +1,10 @@
-package com.songmenglong.wtf;
+package com.songmenglong.myapplication;
 
 /**
- * Created by songmenglong on 2017/12/21.
+ * Created by songmenglong on 2018/1/9.
  */
 
-public class info {
-
+public class Info {
     private int id; //信息ID
     private String title;   //信息标题
     private String details; //详细信息
@@ -42,4 +41,6 @@ public class info {
     public int getAvatar() {
         return avatar;
     }
+
+
 }

@@ -4,14 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.songmenglong.wtf.MainActivity">
-
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
-
+    tools:context="com.songmenglong.myapplication.PlaySound">
 
 </android.support.constraint.ConstraintLayout>
