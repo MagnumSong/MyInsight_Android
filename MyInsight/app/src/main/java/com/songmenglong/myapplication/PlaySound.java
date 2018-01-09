@@ -1,4 +1,4 @@
-package com.songmenglong.wtf;
+package com.songmenglong.myapplication;
 
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -30,11 +30,11 @@ public class PlaySound extends AppCompatActivity {
 
     Handler handler = new Handler();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_sound);
-
     }
 
     @Override
@@ -88,5 +88,6 @@ public class PlaySound extends AppCompatActivity {
         audioTrack.write(generatedSnd, 0, generatedSnd.length);
         audioTrack.play();
     }
+
 
 }
