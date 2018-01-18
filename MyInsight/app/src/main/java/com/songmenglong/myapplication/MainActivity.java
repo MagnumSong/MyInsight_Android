@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
             // 通过findViewById()方法实例R.layout.item内各组件
             TextView title = (TextView) itemView.findViewById(R.id.title);
             title.setText(strTitle);    //填入相应的值
-            TextView text = (TextView) itemView.findViewById(R.id.info);
-            text.setText(strText);
+            //TextView text = (TextView) itemView.findViewById(R.id.info);
+            //text.setText(strText);
             ImageView image = (ImageView) itemView.findViewById(R.id.img);
             image.setImageResource(resId);
 
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setInfo() {
-        mlistInfo.clear();
+        //mlistInfo.clear();
         int i = 0;
         while(i < 20) {
             Info information = new Info();
