@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         TabWidget tabWidget = (TabWidget) findViewById(android.R.id.tabs);
 
         //tabWidget.setDividerDrawable(null); //设置tabWeight没有竖线分割
-        tabWidget.setBackgroundColor(Color.WHITE);
+        //tabWidget.setBackgroundColor(Color.WHITE);
         //初始化activity管理者
         LocalActivityManager manager = new LocalActivityManager(MainActivity.this, false);
         //通过管理者保存当前页面状态
