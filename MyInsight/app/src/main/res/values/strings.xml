@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MyInsight</string>
+    <string name="app_name">有鹿</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="index">首页</string>
+    <string name="message">消息</string>
+    <string name="user">我的</string>
 </resources>
