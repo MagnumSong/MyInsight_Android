@@ -2,7 +2,6 @@ package com.menglong.myinsight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
 
 /*
@@ -13,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MyTabBar myTabBar;
+    //private MyTabBar myTabBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
 //                Toast.makeText(getApplicationContext(),"点击："+eachItem,Toast.LENGTH_SHORT).show();
 //            }
 //        });
+
+
+        /**************************     蓝牙    *********************************/
+
+
+
+
+
+
     }
 
 
