@@ -2,6 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.menglong.myinsight">
 
+    <!-- 使用蓝牙所需要的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 使用扫描和设置蓝牙的权限（申明这一个权限必须申明上面一个权限） -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- GPRS 权限 -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,28 +21,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-
-
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".BluetoothActivity"
+            android:label="@string/title_activity_bluetooth"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
-    <!--使用蓝牙所需要的权限 -->
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <!--使用扫描和设置蓝牙的权限（申明这一个权限必须申明上面一个权限）-->
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <!--位置-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!--位置-->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!--GPRS 权限-->
-    <uses-feature android:name="android.hardware.location.gps" />
-
 </manifest>
-
-

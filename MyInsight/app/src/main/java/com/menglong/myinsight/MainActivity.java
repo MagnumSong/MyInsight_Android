@@ -1,7 +1,11 @@
 package com.menglong.myinsight;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 /*
@@ -13,6 +17,8 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     //private MyTabBar myTabBar;
+
+    private Button bleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +37,18 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
+        // 点击连接蓝牙button
+        bleButton = findViewById(R.id.blebutton);
 
-        /**************************     蓝牙    *********************************/
+        bleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "点击蓝牙按钮", Toast.LENGTH_SHORT).show();
 
-
-
-
-
+                Intent intent = new Intent(MainActivity.this, BluetoothActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
