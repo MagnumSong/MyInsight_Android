@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         bleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // 点击进入下一页面
                 Toast.makeText(MainActivity.this, "点击蓝牙按钮", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(MainActivity.this, BluetoothActivity.class);
