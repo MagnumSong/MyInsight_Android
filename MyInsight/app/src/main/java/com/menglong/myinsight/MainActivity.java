@@ -8,12 +8,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-/*
-*
-* 准备写一个demo 仿照iOS demo的样子
-*
-* */
-
 public class MainActivity extends AppCompatActivity {
 
     //private MyTabBar myTabBar;
@@ -51,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
+
+
 
     }
 
